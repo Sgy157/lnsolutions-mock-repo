@@ -500,16 +500,25 @@ p, label, ul, blockquote {
 }
 
 #main-form{
+    margin-top: 15px;
+    text-align: center;
     width: 100%;
 }
 
 #main-form h2{
     width: 100%;
-    font-size: 25px;
+    font-size: 30px;
     margin: 10px 0px;
-    margin-bottom: -30px;
-    padding-bottom: 0px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
     font-weight: 600;
+}
+
+#main-form form{
+    border-radius: 10px;
+    background-color: #000000;
+    color: white;
+    padding: 11px;
 }
 
 #main-form h3{
@@ -517,19 +526,19 @@ p, label, ul, blockquote {
     font-size: 20px;
     margin: 10px 0px;
     padding-bottom: 0px;
-    margin-top: 40px;
+    margin-top: 20px;
     font-weight: 600;
 }
 
 #main-form h4{
     width: 100%;
     font-size: 15px;
-    margin: 10px 0px;
+    margin: 15px 0px;
     padding-bottom: 0px;
 }
 
 #main-form textarea{
-    width: 100%;
+    width: 80%;
     resize: none;
 }
 
@@ -541,12 +550,14 @@ p, label, ul, blockquote {
 
 #main-form input{
     font-size: 15px;
+    margin-bottom: 5px;
+    border-radius: 3px;
 }
 
 #main-form #invalid-label{
+    font-weight: 600;
     color: red;
     font-size: 13px;
-    margin: 0px 5px;
     overflow: auto;
 }
 
