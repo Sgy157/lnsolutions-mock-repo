@@ -9,7 +9,6 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: left;
     margin: 0 auto;
     padding: 5px 5px;
     height: 100%;
@@ -138,7 +137,6 @@ p, label, ul, blockquote {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     margin-top: 20px;
-    border-color: black;
     color: white;
     width: 100%;
     background-color: black;
