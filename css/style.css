@@ -1,17 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+
 h1, h2, h3, h4, h5, h6{
     font-family: "Montserrat", Helvetica, sans-serif;
     font-weight: 400;
 }
 
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes slidein {
+    0%{
+        padding-top: 100%;
+    }
+
+    100%{
+        padding-top: 0%;
+    }
+}
+
+
 main{
+    will-change: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 0 auto;
-    padding: 5px 5px;
-    height: 100%;
+    padding: 5px;
 }
 
 h1{
@@ -27,18 +48,21 @@ p, label, ul, blockquote {
     font-weight: 400;
 }
 
+section{
+    animation: fadein 1s;
+    will-change: auto;
+} 
+
 #main-header{
     z-index: 1;
     overflow: auto;
     display: flex;
     background-image: linear-gradient(to bottom, rgb(255, 255, 255),rgba(255, 255, 255, 0.692));
-    backdrop-filter: blur(5px);
     padding: 5px;
     position: sticky; top: 0;
 }
 
 #main-header h1{
-    padding: 0px 0;
     margin: 0 auto;
     padding: 0px 5px;
     display: flex;
@@ -48,10 +72,8 @@ p, label, ul, blockquote {
 
 #main-header nav{
     margin: 0 auto;
-    padding: 0px 0px;
     display: flex;
-    justify-content: right;
-    position: relative;
+    justify-content: flex-end;
 }
 
 #main-header nav ul{
@@ -89,28 +111,66 @@ p, label, ul, blockquote {
     padding: 5px 15px;
     height: 370px;
     background-size: cover;
-    background-repeat: repeat-x;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),rgb(0, 0, 0))
     , url("../assets/bg/abstract-blue-fractal-wave-technology-background.jpg");
 }
 
 #contact-message .message, #project-main .headers{
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.405);
-    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.474);
 }
+
+/* ELEMENT ANIMATIONS */
+
+#project-main, #main-form{
+    opacity: 0;
+    animation: fadein 1s forwards, slidein 1s forwards;
+    animation-delay: 0.5s;
+}
+
+#contact-message .message h2, #project-main h2{
+    opacity: 0;
+    animation: fadein 0.7s forwards;
+    animation-delay: 0.5s;
+}
+
+#contact-message .message p, #project-main h3{
+    opacity: 0;
+    animation: fadein 1s forwards;
+    animation-delay: 1.2s;
+}
+
+.button, #project-main p, #project-main h4{
+    opacity: 0;
+    animation: fadein 1s forwards;
+    animation-delay: 2s;
+}
+
+#founders, #founders-header, #clients-header, #previous-clients{
+    opacity: 0;
+    animation: fadein 1s forwards;
+    animation-delay: 3s;
+}
+
+#project-header, #projects{
+    opacity: 0;
+    animation: fadein 1s forwards, slidein 1s forwards;
+    animation-delay: 3s;
+}
+
+/* END */
 
 #contact-message .message h2{
     padding: 15px 20px;
     font-size: 45px;
     width: 90%;
-    margin-bottom: 0px;
+    margin-bottom: -20px;
     padding-bottom: 0px;
 }
 
 #contact-message .message p{
     padding: 5px 20px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     width: 60%;
     font-size: 28px;
     font-weight: 300;
@@ -123,7 +183,6 @@ p, label, ul, blockquote {
 
 .button a{
     background-color: rgba(255, 255, 255, 0.141);
-    backdrop-filter: blur(2px);
     border-radius: 10px;
     padding: 10px;
     color: white;
@@ -134,8 +193,7 @@ p, label, ul, blockquote {
 }
 
 #clients-header{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px 10px 0 0;
     margin-top: 20px;
     color: white;
     width: 100%;
@@ -151,10 +209,9 @@ p, label, ul, blockquote {
     margin-top: 0px;
     padding: 50px;
     padding-top: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     margin-bottom: 5px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 0 0 10px 10px;
     background-size: cover;
     background-repeat:unset;
 
@@ -213,7 +270,6 @@ p, label, ul, blockquote {
 
 .founder-profile{
     border-radius: 10px;
-    backdrop-filter: blur(10px);
     background-color: rgba(0, 0, 0, 0.671);
     display: block;
     text-align: center;
@@ -301,17 +357,18 @@ p, label, ul, blockquote {
     margin-top: 10px;
     display: flex;
     border-radius: 10px;
-    padding: 0px 15px;
+    padding: 0px 20px;
     color: white;
     width: 100%;
     background-image: url("../assets/pex/ZSVKEU.png");
 }
 
 #project-main .headers{
+    padding: 0px 10px;
     border-radius: 10px;
     color: white;
     width: 100%;
-    margin-right: 10px;
+    margin-right: 0px;
 }
 
 #project-main .headers h2{
@@ -348,16 +405,6 @@ p, label, ul, blockquote {
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 0px;
-}
-
-#project-main .disclaimer p{
-    text-align: right;
-    position: absolute;
-    right: 10px;
-    bottom: 0px;
-    padding: 10px 0px;
-    font-weight: 100;
-    font-size: 12px;
 }
 
 #project-main .images{
@@ -506,8 +553,8 @@ p, label, ul, blockquote {
 #main-form h2{
     width: 100%;
     font-size: 30px;
-    margin: 10px 0px;
-    margin-bottom: 10px;
+    margin: 5px 0px;
+    margin-bottom: -5px;
     padding-bottom: 5px;
     font-weight: 600;
 }
@@ -531,7 +578,8 @@ p, label, ul, blockquote {
 #main-form h4{
     width: 100%;
     font-size: 15px;
-    margin: 15px 0px;
+    margin: 10px 0px;
+    margin-bottom: 5px;
     padding-bottom: 0px;
 }
 
@@ -642,7 +690,6 @@ footer h6{
 
     .client blockquote {
         background-color: rgba(0, 0, 0, 0.303);
-        backdrop-filter: blur(5px);
         margin: auto;
         width: auto;
     }
@@ -708,7 +755,6 @@ footer h6{
 
     .client blockquote {
         background-color: rgba(0, 0, 0, 0.303);
-        backdrop-filter: blur(5px);
         margin: auto;
         width: auto;
     }
@@ -774,7 +820,6 @@ footer h6{
 
     .client blockquote {
         background-color: rgba(0, 0, 0, 0.23);
-        backdrop-filter: blur(0px);
         margin: auto;
         width: 85%;
     }
@@ -789,7 +834,7 @@ footer h6{
 
     #project-main .images{
         flex-direction: column;
-        width: 70%;
+        width: 60%;
     }
 
     #project-main .images .image{
@@ -828,7 +873,6 @@ footer h6{
 
     .client blockquote {
         background-color: rgba(0, 0, 0, 0.23);
-        backdrop-filter: blur(0px);
         margin: auto;
         width: 90%;
     }
@@ -843,7 +887,7 @@ footer h6{
 
     #project-main .images{
         flex-direction: column;
-        width: 60%;
+        width: 50%;
     }
 
     #project-main .images .image{
@@ -859,6 +903,10 @@ footer h6{
 
     #contact-message{
         height: 380px;
+    }
+
+    #project-main .images{
+        width: 45%;
     }
 
     #project-main .images .image{
