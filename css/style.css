@@ -538,6 +538,7 @@ p, label, ul, blockquote {
 }
 
 #main-form textarea{
+    border-radius: 10px;
     width: 80%;
     resize: none;
 }
@@ -664,6 +665,12 @@ footer h6{
 
     .project{
         width: auto;
+    }
+
+    #main-form input{
+        font-size: 11px;
+        margin-bottom: 0px;
+        border-radius: 3px;
     }
 
     footer a, footer p{
