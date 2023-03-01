@@ -110,7 +110,6 @@ function validateForm(){
         if (form.name[0].value + form.name[1].value == ""){
             contactName = "Not Given";
         }
-
         form.innerHTML = "";
         document.getElementById("main-form").innerHTML = (
             "<h2>Thank you.</h2>"+
@@ -127,5 +126,7 @@ function validateForm(){
                 "<p>" + "\"" + proposaltext + "\"" + "</p>"
             );
         }
+
+        alert("Submission Recieved, See Details Below");
     }
 }
