@@ -360,7 +360,7 @@ p, label, ul, blockquote {
     font-size: 12px;
 }
 
-#project-main #images{
+#project-main .images{
     align-items: center;
     justify-content: center;
     display:flex;
@@ -368,14 +368,14 @@ p, label, ul, blockquote {
     width: 50%;
 }
 
-#project-main #images .image{
+#project-main .images .image{
     width: 100%;
     justify-content: center;
     padding: 0px;
     margin: 3px;
 }
 
-#project-main #images .image img{
+#project-main .images .image img{
     border-radius: 10px;
     width: 100%;
 }
@@ -430,7 +430,7 @@ p, label, ul, blockquote {
     margin-bottom: 10px;
 }
 
-.project #images {
+.project .images {
     display: flex;
     flex-direction: row;
     margin: 10px;
@@ -652,7 +652,7 @@ footer h6{
         margin-bottom: 5px;
     }
 
-    #project-main #images{
+    #project-main .images{
         display: flex;
         width: 100%;
     }
@@ -711,12 +711,12 @@ footer h6{
         display: block;
     }
 
-    #project-main #images{
+    #project-main .images{
         flex-direction: row;
         width: 100%;
     }
 
-    #project-main #images .image{
+    #project-main .images .image{
         margin-top: -25px;
     }
 
@@ -777,12 +777,12 @@ footer h6{
         display: flex;
     }
 
-    #project-main #images{
+    #project-main .images{
         flex-direction: column;
         width: 70%;
     }
 
-    #project-main #images .image{
+    #project-main .images .image{
         margin-top: 10px;
     }
 
@@ -831,12 +831,12 @@ footer h6{
         display: flex;
     }
 
-    #project-main #images{
+    #project-main .images{
         flex-direction: column;
         width: 60%;
     }
 
-    #project-main #images .image{
+    #project-main .images .image{
         margin-top: 10px;
     }
 } 
@@ -851,7 +851,7 @@ footer h6{
         height: 380px;
     }
 
-    #project-main #images .image{
+    #project-main .images .image{
         margin-top: 10px;
     }
 }
