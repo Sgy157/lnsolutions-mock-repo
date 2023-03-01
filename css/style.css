@@ -1,0 +1,841 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap');
+h1, h2, h3, h4, h5, h6{
+    font-family: "Montserrat", Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: left;
+    margin: 0 auto;
+    padding: 5px 5px;
+    height: 100%;
+}
+
+h1{
+    font-size: 35px;
+}
+
+h1, h2{
+    font-weight: 600;
+}
+
+p, label, ul, blockquote {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+#main-header{
+    z-index: 1;
+    overflow: auto;
+    display: flex;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255),rgba(255, 255, 255, 0.692));
+    backdrop-filter: blur(5px);
+    padding: 5px;
+    position: sticky; top: 0;
+}
+
+#main-header h1{
+    padding: 0px 0;
+    margin: 0 auto;
+    padding: 0px 5px;
+    display: flex;
+    justify-content: left;
+    overflow: hidden;
+}
+
+#main-header nav{
+    margin: 0 auto;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: right;
+    position: relative;
+}
+
+#main-header nav ul{
+    margin: 0;
+    padding: 0px;
+    display: inline-block;
+}
+
+#main-header nav a{ 
+    border-radius: 5px;
+    font-family: "Montserrat", Helvetica, sans-serif;
+    text-decoration: none;
+    background-color: transparent;
+    color: black;
+    
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 10px;
+    margin: 0px 10px;
+}
+
+#main-header nav a:hover,.button a:hover {
+    filter: drop-shadow(0px 0px 4px #000000);
+    background-color: black;
+    color: white;
+}
+
+
+#contact-message{
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+    margin-top: 10px;
+    padding: 5px 15px;
+    height: 370px;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0),rgb(0, 0, 0))
+    , url("../assets/bg/abstract-blue-fractal-wave-technology-background.jpg");
+}
+
+#contact-message .message, #project-main .headers{
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.405);
+    backdrop-filter: blur(2px);
+}
+
+#contact-message .message h2{
+    padding: 15px 20px;
+    font-size: 45px;
+    width: 90%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#contact-message .message p{
+    padding: 5px 20px;
+    padding-bottom: 10px;
+    width: 60%;
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+.button{
+    margin: 30px 5px;
+}
+
+.button a{
+    background-color: rgba(255, 255, 255, 0.141);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+#clients-header{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 20px;
+    border-color: black;
+    color: white;
+    width: 100%;
+    background-color: black;
+    font-size: 15px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+#previous-clients{
+    align-items: center;
+    margin-top: 0px;
+    padding: 50px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-size: cover;
+    background-repeat:unset;
+
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0) 0%,rgb(255, 255, 255, 0) 80%)
+    , url("../assets/bg/pexels-malte-luk-1729158.jpg");
+    width: 100%;
+    display: inline;
+    text-align: center;
+    justify-content:center;
+}
+
+.client{
+    text-align: center;
+    align-items: center;
+    width: 33%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.client img {
+    padding-bottom: 8px;
+}
+
+.client blockquote{
+    color: white;
+
+    border-radius: 10px;
+    font-weight: 500;
+    padding: 0px 7px;
+    margin: auto;
+    width: auto;
+    display: table;
+    padding-top: 4px;
+    padding-bottom: 5px;
+}
+
+#founders-header{
+    width: 100%;
+    font-size: 20px;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+#founders{
+    display: flex;
+    width: 80%;
+    padding: 30px;
+    background-image: url("../assets/bg/abstract-blue-fractal-wave-technology-background.jpg");
+    background-size: cover;
+    background-repeat:unset;
+    border-radius: 10px;
+    color: white;
+}
+
+.founder-profile{
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.671);
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.founder-profile img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    padding: 0px;
+}
+
+.founder-profile h3{
+    font-weight: 600;
+    margin: 0px;
+    padding-top: 7px;
+    margin-bottom: -1px;
+}
+
+.founder-profile h4{
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+
+.founder-profile a{
+    color: white;
+    text-decoration: none;
+}
+
+.founder-profile p{
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 1px;
+    font-weight: 200;
+}
+
+#educations h4, #skills h4{
+    align-self: center;
+    width: 100%;
+    font-weight: 600;
+}
+
+#educations{
+    align-self: center;
+    text-align: center;
+    margin-top: 8px;
+}
+
+#educations p{
+    margin-bottom: 7px;
+    padding: 5px 10px;
+}
+
+#skills{
+    display: block;
+    margin-bottom: 50px;
+}
+
+.skill{
+    padding-left: 32%;
+    display:flex;
+    width: 80%;
+    margin: 10px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.skill p{
+    width: 0%;
+    margin: 10px;
+}
+
+.skill img{
+    border-radius: 0px;
+    margin: 0px;
+}
+
+#project-main{
+    margin-top: 10px;
+    display: flex;
+    border-radius: 10px;
+    padding: 0px 15px;
+    color: white;
+    width: 100%;
+    background-image: url("../assets/pex/ZSVKEU.png");
+}
+
+#project-main .headers{
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    margin-right: 10px;
+}
+
+#project-main .headers h2{
+    padding: 0px 10px;
+    font-size: 45px;
+    width: 100%;
+    margin-bottom: -27px;
+    padding-bottom: 0px;
+}
+
+#project-main .headers h3, #project-main .headers h4{
+    padding: 0px 10px;
+    width: 90%;
+    font-size: 28px;
+    font-weight: 300;
+    padding-bottom: 0px;
+    margin-bottom: -10px;
+}
+
+#project-main .headers h4{
+    padding: 0px 10px;
+    width: 90%;
+    font-size: 28px;
+    font-weight: 300;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: -10px;
+}
+
+#project-main .headers p{
+    padding: 0px 10px;
+    padding-bottom: 0px;
+    width: 95%;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 0px;
+}
+
+#project-main .disclaimer p{
+    text-align: right;
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    padding: 10px 0px;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+#project-main #images{
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#project-main #images .image{
+    width: 100%;
+    justify-content: center;
+    padding: 0px;
+    margin: 3px;
+}
+
+#project-main #images .image img{
+    border-radius: 10px;
+    width: 100%;
+}
+
+#project-header{
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: -20px;
+    margin-bottom: -10px;
+}
+
+#projects{
+    width: 100%;
+    display: flex;
+}
+
+.project{
+    width: 100%;
+    padding: 1px 20px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.project h3{
+    font-size: 20px;
+    margin-bottom: -10px;
+}
+
+.project h4{
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
+
+.project ul{
+    padding: 0px 20px;
+}
+
+.project a{
+    color: white;
+    text-decoration: none;
+}
+
+.project p{
+    font-size: 13px;
+    padding: 0px 1.5px;
+    margin-bottom: 10px;
+}
+
+.project #images {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.project .img{
+    margin: 10px;
+    margin-bottom: 0px;
+}
+
+.project .img img{
+    border-radius: 10px;
+    max-width:100%;
+    max-height:100%;
+}
+
+.project button{
+    padding: 2px 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-bottom: 0px;
+}
+
+#playarea{
+    width: 100% ;
+    margin: 15px 30px;
+    margin-bottom: 0px;
+}
+
+#playarea iframe{
+    border-radius: 10px;
+    width: 100%;
+    height: 580px;
+}
+
+#contact-us{
+    border-radius: 10px;
+    background-size:auto;
+    background-position: -10px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), white),url("../assets/bg/ballbg.png");
+    width: 100%;
+    text-align: center;
+}
+
+#contact-us h2{
+    font-size: 35px;
+    margin: 0;
+    margin-top: -7px;
+}
+
+#contact-us h3{
+    margin: 0;;
+    margin-top: -0px;
+    margin-bottom: 5px;
+}
+
+#contact-us p{
+    margin: 0;
+}
+
+#contact-us .headers{
+    padding: 9px;
+    border-radius: 20px;
+    background-color: #ffffff45;
+}
+
+#main-form{
+    width: 100%;
+}
+
+#main-form h2{
+    width: 100%;
+    font-size: 25px;
+    margin: 10px 0px;
+    margin-bottom: -30px;
+    padding-bottom: 0px;
+    font-weight: 600;
+}
+
+#main-form h3{
+    width: 100%;
+    font-size: 20px;
+    margin: 10px 0px;
+    padding-bottom: 0px;
+    margin-top: 40px;
+    font-weight: 600;
+}
+
+#main-form h4{
+    width: 100%;
+    font-size: 15px;
+    margin: 10px 0px;
+    padding-bottom: 0px;
+}
+
+#main-form textarea{
+    width: 100%;
+    resize: none;
+}
+
+#main-form label, input{
+    font-size: 15px;
+    margin-right: 5px;
+    margin-bottom: -10px;
+}
+
+#main-form input{
+    font-size: 15px;
+}
+
+#main-form #invalid-label{
+    color: red;
+    font-size: 13px;
+    margin: 0px 5px;
+    overflow: auto;
+}
+
+footer {
+    margin-top: 10px;
+    color: black;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+
+    height: 47px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+footer a, footer p{
+    text-align: center;
+    margin: 0px;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+footer h5{
+    text-align: center;
+    font-weight: 500;
+    margin: 0px;
+    color: black;
+    text-decoration: none;
+}
+
+footer h6{
+    text-align: center;
+    padding-top: 3px;
+    margin: 0;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #main-header h1{
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+    
+    #main-header nav a{ 
+        font-size: 16px;
+        padding: 12px 5px;
+        margin: 0px 6px;
+    }
+    
+    #contact-message{
+        height: 405px;
+    }
+
+    #contact-message .message h2{
+        padding: 10px 10px;
+        font-size: 35px;
+        width: 90%;
+    }
+    
+    #contact-message .message p{
+        padding: 0px 10px;
+        padding-bottom: 10px;
+        width: 90%;
+        font-size: 25px;
+        font-weight: 300;
+        margin-bottom: 0px;
+    }
+
+    .client{
+        width: 100%;
+    }
+
+    .client blockquote {
+        background-color: rgba(0, 0, 0, 0.303);
+        backdrop-filter: blur(5px);
+        margin: auto;
+        width: auto;
+    }
+
+    #founders{
+        display: block;
+    }
+
+    #project-main{
+        display: block;
+    }
+
+    #project-main .headers{
+        height: 390px;
+        margin-bottom: 5px;
+    }
+
+    #project-main #images{
+        display: flex;
+        width: 100%;
+    }
+
+    #projects{
+        display: block;
+    }
+
+    .project{
+        width: auto;
+    }
+
+    footer a, footer p{
+        font-size: 13px;
+    }
+}
+  
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #main-header h1{
+        font-size: 28px;
+    }
+    
+    #main-header nav a{ 
+        font-size: 15px;
+        padding: 9px 10px;
+        margin: 0px 7px;
+    }
+
+    #contact-message{
+        height: 470px;
+    }
+
+    .client{
+        width: 100%;
+    }
+
+    .client blockquote {
+        background-color: rgba(0, 0, 0, 0.303);
+        backdrop-filter: blur(5px);
+        margin: auto;
+        width: auto;
+    }
+
+    #founders{
+        display: block;
+    }
+
+    #project-main{
+        display: block;
+    }
+
+    #project-main #images{
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #project-main #images .image{
+        margin-top: -25px;
+    }
+
+    #project-main .headers{
+        height: 400px;
+        margin-bottom: 30px;
+    }
+    
+    #projects{
+        display: block;
+    }
+
+    .project{
+        width: auto;
+    }
+
+    footer a, footer p{
+        font-size: 15px;
+    }
+}
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    main{
+        width: 95%;
+    }
+
+    #main-header h1{
+        font-size: 35px;
+    }
+    
+    #main-header nav a{ 
+        font-size: 17px;
+        padding: 10px 10px;
+        margin: 0px 10px;
+    }
+
+    #contact-message{
+        height: 410px;
+    }
+
+    .client{
+        width: 33.3%;
+    }
+
+    .client blockquote {
+        background-color: rgba(0, 0, 0, 0.23);
+        backdrop-filter: blur(0px);
+        margin: auto;
+        width: 85%;
+    }
+
+    #founders{
+        display: flex;
+    }
+
+    #project-main{
+        display: flex;
+    }
+
+    #project-main #images{
+        flex-direction: column;
+        width: 70%;
+    }
+
+    #project-main #images .image{
+        margin-top: 10px;
+    }
+
+    #project-main .headers{
+        height: 97%;
+    }
+
+    #projects{
+        display: flex;
+    }
+
+    .project{
+        width: 100%;
+    }
+} 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    main{
+        width: 90%;
+    }
+
+    #contact-message{
+        height: 370px;
+    }
+
+    #contact-message .button a{
+        border-radius: 10px;
+        padding: 10px;
+        font-weight: 300;
+        font-size: 27px;
+    }
+
+    .client blockquote {
+        background-color: rgba(0, 0, 0, 0.23);
+        backdrop-filter: blur(0px);
+        margin: auto;
+        width: 90%;
+    }
+
+    #founders{
+        display: flex;
+    }
+
+    #project-main{
+        display: flex;
+    }
+
+    #project-main #images{
+        flex-direction: column;
+        width: 60%;
+    }
+
+    #project-main #images .image{
+        margin-top: 10px;
+    }
+} 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    main{
+        width: 80%;
+    }
+
+    #contact-message{
+        height: 380px;
+    }
+
+    #project-main #images .image{
+        margin-top: 10px;
+    }
+}

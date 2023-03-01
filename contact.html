@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/dog.jpg">
+    <script defer src="./js/formhandler.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Contact Us - LN Solutions</title>
+</head>
+<body>
+    <header id="main-header">
+        <h1>LN Solutions</h1>
+        <nav>
+            <a id="main-nav" href="./index.html">Home</a>
+            <a id="main-nav" href="./projects.html">Projects</a>
+            <a id="main-nav" href="./contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-us">
+            <div class="headers">
+                <h2>Get in Touch.</h2>
+                <h3>Pitch your idea. Leave the rest to us.</h3>
+                <p><em>Available from: Monday-Saturday, 9am-8pm</em></p>
+            </div>
+        </section>
+        
+        <section id="main-form">
+            <form class="form" onsubmit="return false">
+                <h2>Details:</h2>
+                <h3>Meeting Infromation</h3>
+                <h4>Project Summary:</h4>
+                <textarea name="proposal" id="proposal-text" cols="60" rows="10" placeholder="Max: 500 Characters" maxlength="500" required></textarea>
+                <label for="submit" id="invalid-label" name="invalid-label"></label>
+
+                <h4>Scheduling:</h4>
+                <label for="meeting-date">Meeting Date/Week: </label>
+                <input type="date" id="meeting-date" name="date" required>
+                <label><input type="radio" name="datetype" value="a" checked>Day</label>
+                <label> <input type="radio" name="datetype" value="b">Week</label>
+                <label for="datetype" id="invalid-label" name="invalid-label"></label><br></br>
+                
+                <label for="meeting-time">At:</label>
+                <input type="time" id="meeting-time" name="time" required>
+                <label for="meeting-time">Duration:</label>
+                <input type="text" name="duration" id="duration" placeholder="In Minutes (Max 180)" maxlength="1000" required>
+                <label for="duration" id="invalid-label" name="invalid-label"></label>
+
+
+                <h3>Contact Infromation</h3>
+                <input type="text" name="name" id="firstname" placeholder="First Name" required> 
+                <input type="text" name="name" id="lastname" placeholder="Last Name"><br></br>
+                <label for="">How should we contact you? </label>
+                <label><input type="radio" name="contacttype" value="a" checked>Phone</label>
+                <label><input type="radio" name="contacttype" value="b">Email</label><br></br>
+                <input type="text" name="contactfield" id="contactfield" placeholder="Phone Number/Email" required> 
+                <input type="text" name="contactfield" id="contactfield" placeholder="Confirm Number/Email" required> 
+                <label for="submit" id="invalid-label" name="invalid-label"></label></label> <br></br>
+                <input type="submit" name="submit" id="submit"></button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h5>Credits to:</h5>
+        <p>
+            <a href="https://www.freepik.com/free-photo/abstract-blue-fractal-wave-technology-background_3250726.htm">Image by starline</a> on Freepik | 
+            <a href="https://www.pexels.com/photo/scenic-view-of-sky-during-daytime-1729158/">Scenic View Of Sky During Daytime</a> on Pexels
+        </p>
+
+        <h6>LN Solutions - <script>document.write(/\d{4}/.exec(Date())[0])</script></h6>
+    </footer>
+</body>
+</html>
