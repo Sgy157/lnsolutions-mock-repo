@@ -548,14 +548,22 @@ p, label, ul, blockquote {
 }
 
 #main-form input{
+    height: 20px;
     font-size: 15px;
     margin-bottom: 5px;
-    border-radius: 3px;
+    border-radius: 5px;
+}
+
+#main-form #submit{
+    background-color: white;
+    height: 25px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700px;
 }
 
 #main-form #invalid-label{
     font-weight: 600;
-    color: red;
+    color: rgb(255, 87, 87);
     font-size: 13px;
     overflow: auto;
 }
@@ -666,6 +674,8 @@ footer h6{
     }
 
     #main-form input{
+        margin-right: 2px;
+        height: 15px;
         font-size: 11px;
         margin-bottom: 0px;
         border-radius: 3px;
