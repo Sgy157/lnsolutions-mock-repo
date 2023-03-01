@@ -256,24 +256,24 @@ p, label, ul, blockquote {
     font-weight: 200;
 }
 
-#educations h4, #skills h4{
+.educations h4, #skills h4{
     align-self: center;
     width: 100%;
     font-weight: 600;
 }
 
-#educations{
+.educations{
     align-self: center;
     text-align: center;
     margin-top: 8px;
 }
 
-#educations p{
+.educations p{
     margin-bottom: 7px;
     padding: 5px 10px;
 }
 
-#skills{
+.skills{
     display: block;
     margin-bottom: 50px;
 }
